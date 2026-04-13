@@ -54,6 +54,7 @@ space-portfolio/
     |-- icon2.png
     |-- layout.tsx
     |-- page.tsx
+  |- assets/
   |- components/
     |-- main/
     |-- sub/
@@ -128,12 +129,15 @@ Useful resources and dependencies that are used in Space Portfolio.
 - [eslint](https://www.npmjs.com/package/eslint): ^10.2.0
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 16.2.2
 - [framer-motion](https://www.npmjs.com/package/framer-motion): ^12.38.0
+- [lottie-react](https://www.npmjs.com/package/lottie-react): ^2.4.1
+- [lucide-react](https://www.npmjs.com/package/lucide-react): ^1.8.0
 - [next](https://www.npmjs.com/package/next): 16.2.3
 - [postcss](https://www.npmjs.com/package/postcss): ^8
 - [react](https://www.npmjs.com/package/react): 19.2.5
 - [react-dom](https://www.npmjs.com/package/react-dom): 19.2.5
 - [react-icons](https://www.npmjs.com/package/react-icons): ^5.6.0
 - [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer): ^10.0.3
+- [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter): ^5.0.1
 - [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^3.5.0
 - [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.0
 - [three](https://www.npmjs.com/package/three): ^0.183.2
