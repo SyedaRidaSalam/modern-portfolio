@@ -27,16 +27,16 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section
-      id="experience"
-      className="flex flex-col items-center justify-center py-20 px-5"
-    >
+ <section
+  id="experience"
+  className="w-full overflow-hidden py-20 px-4 md:px-10"
+>
       {/* Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20"
+        className="text-[40px] font-semibold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20"
       >
         Experience
       </motion.h1>
