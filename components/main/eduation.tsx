@@ -25,14 +25,31 @@ export const Education = () => {
   return (
     <section id="education" className="py-20 px-6">
 
-      <motion.h1
-  initial={{ opacity: 0, y: -20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 text-center"
->
-  Education
-</motion.h1>
+<motion.div
+      initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="text-center py-20 relative"
+    >
+
+
+      {/* Main Heading */}
+      <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
+        <span className="hidden sm:inline">🎓</span>
+        Academic Background
+      </h1>
+      
+      {/* Subtitle */}
+      <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base tracking-wide opacity-80 px-4">
+        Exploring the vast universe of <span className="text-white font-medium">knowledge</span> and building the future of tech.
+      </p>
+
+      {/* Premium Divider with Glow */}
+      <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+        <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+      </div>
+    </motion.div>
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto mt-[-60px]">
 
         {/* LEFT ANIMATION */}

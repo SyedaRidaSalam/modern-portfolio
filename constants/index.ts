@@ -65,7 +65,7 @@ export const BACKEND_SKILL = [
   { skill_name: "LLM Integration", image: "ai.svg", width: 80, height: 80 },
 
   // Media / APIs
-  { skill_name: "ImageKit", image: "imagekit.jfif", width: 80, height: 80 },
+  { skill_name: "ImageKit", image: "imagekit.png", width: 80, height: 80 },
 ] as const;
 
 export const FULLSTACK_SKILL = [
@@ -170,19 +170,32 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "Home",
+    link: "#home",
+  },
+  {
+    title: "About",
     link: "#about-me",
   },
   {
     title: "Skills",
     link: "#skills",
   },
+    {
+    title: "Experience",
+    link: "#experience",
+  },
+    {
+    title: "Education",
+    link: "#education",
+  },
   {
     title: "Projects",
     link: "#projects",
   },
-] as const;
 
-export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
-};
+  {
+    title: "Contact",
+    link: "#contact",
+  },
+];

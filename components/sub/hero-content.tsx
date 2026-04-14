@@ -16,24 +16,27 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 mt-32 md:mt-40 w-full z-[20] gap-10"
     >
-      <div className="h-full w-full flex flex-col gap-4 justify-center m-auto text-start">
+
+      {/* LEFT SIDE */}
+      <div className="w-full md:w-1/2 flex flex-col gap-5 text-start">
+
         {/* Welcome Box */}
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[1px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="inline-flex items-center gap-2 py-[6px] px-[12px] border border-[#7042f88b] rounded-full bg-white/5 backdrop-blur-md w-fit"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <SparklesIcon className="text-[#b49bff] h-5 w-5" />
+          <h1 className="text-[13px] text-gray-200">
             Full Stack Developer Portfolio
           </h1>
         </motion.div>
 
-        {/* Name & Typewriter Section */}
+        {/* Name */}
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-3xl md:text-4xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-4 text-3xl md:text-4xl font-bold text-white"
         >
           <span>
             Hi, I&apos;m{" "}
@@ -41,9 +44,10 @@ export const HeroContent = () => {
               Abdul Salam Wahab
             </span>
           </span>
-          
-          <div className="text-xl md:text-3xl h-[50px]">
-            <span className="text-gray-200">A </span>
+
+          {/* Typewriter */}
+          <div className="text-xl md:text-2xl h-[40px]">
+            <span className="text-gray-300">A </span>
             <span className="text-cyan-400">
               <Typewriter
                 words={[
@@ -51,68 +55,79 @@ export const HeroContent = () => {
                   "Software Engineer",
                   "SaaS Developer",
                   "AI Tool Builder",
-                  "Seamless UI Architect",
+                  "UI Architect",
                 ]}
-                loop={0} // Infinite loop
+                loop={0}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={1200}
               />
             </span>
           </div>
         </motion.div>
 
-        {/* Recruiter Friendly About Me */}
+        {/* Description */}
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400  max-w-[600px] leading-relaxed"
+          className="text-gray-400 text-base md:text-lg leading-relaxed max-w-xl"
         >
-       Passionate Software Engineer focused on building
-<span className="text-white font-medium"> modern web applications </span>
-and high-performance digital solutions. I enjoy creating
-<span className="text-white font-medium"> scalable, user-friendly interfaces </span>
-combined with efficient backend logic. I focus on writing clean, maintainable code and delivering
-<span className="text-white font-medium"> smooth and reliable user experiences </span>
-across different types of projects and technologies.
+          Passionate Software Engineer building{" "}
+          <span className="text-white">modern web apps</span>,{" "}
+          <span className="text-white">SaaS platforms</span>, and{" "}
+          <span className="text-white">AI-powered tools</span> with clean UI,
+          scalable architecture, and smooth user experience.
         </motion.p>
 
-        {/* CTA Buttons */}
-        <div className="flex gap-4">
+        {/* CTA BUTTONS */}
+        <motion.div
+          variants={slideInFromLeft(1)}
+          className="flex flex-wrap gap-4 mt-6"
+        >
+
+          {/* View Projects */}
           <motion.a
-            variants={slideInFromLeft(1)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             href="#projects"
-            className="py-3 px-6 button-primary text-center text-white cursor-pointer rounded-lg min-w-[150px] font-semibold transition-all hover:scale-105"
-          >
-            View Projects
+  className="relative px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center"
+>
+   <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            <span className="relative z-10">View Projects</span>
           </motion.a>
 
+          {/* Resume */}
           <motion.a
-            variants={slideInFromLeft(1.1)}
-            href="/resume.pdf" // Make sure your resume is in public folder
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="/resume.pdf"
             target="_blank"
-            className="py-3 px-6 border border-purple-500 text-center text-white cursor-pointer rounded-lg min-w-[150px] font-semibold bg-[#03001417] hover:bg-[#7042f821] transition-all hover:scale-105"
-          >
-            Download Resume
+  className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
+>
+  <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+            <span className="relative z-10">Download Resume</span>
           </motion.a>
-        </div>
+
+        </motion.div>
       </div>
 
-      {/* Right Side Image */}
+      {/* RIGHT SIDE IMAGE */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full md:w-1/2 flex justify-center items-center"
       >
         <Image
           src="/hero-bg.svg"
-          alt="work icons"
-          height={650}
-          width={650}
+          alt="hero"
+          height={600}
+          width={600}
           draggable={false}
           className="select-none"
         />
       </motion.div>
+
     </motion.div>
   );
 };
