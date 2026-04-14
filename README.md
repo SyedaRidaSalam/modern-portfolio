@@ -66,6 +66,7 @@ space-portfolio/
     |-- motion.ts
     |-- utils.ts
   |- public/
+  |- .env
   |- .eslintrc.json
   |- .gitignore
   |- eslint.config.mjs
@@ -118,6 +119,7 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in Space Portfolio.
 
 <!--- DEPENDENCIES_START --->
+- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^4.4.1
 - [@heroicons/react](https://www.npmjs.com/package/@heroicons/react): ^2.2.0
 - [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^10.7.7
 - [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^9.5.0
