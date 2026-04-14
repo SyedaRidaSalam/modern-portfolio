@@ -58,6 +58,7 @@ space-portfolio/
   |- components/
     |-- main/
     |-- sub/
+    |-- ui/
   |- config/
     |-- index.ts
   |- constants/
