@@ -40,7 +40,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full h-[65px] fixed top-0 z-50 px-6 md:px-10 bg-[#03001427] backdrop-blur-md shadow-lg shadow-[#2A0E61]/40">
+    <div className="w-full h-[65px] fixed top-0 z-50 px-6 md:px-10 bg-[#03001480] backdrop-blur-md shadow-lg shadow-[#2A0E61]/40">
 
       <div className="flex items-center justify-between h-full">
 

@@ -9,6 +9,7 @@ import { siteConfig } from "@/config";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import { FloatingSocials } from "@/components/ui/floating-socials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <StarsCanvas />
         <Navbar />
         {children}
+        <FloatingSocials />
         <Footer />
       </body>
     </html>

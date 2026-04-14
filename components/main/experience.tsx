@@ -5,23 +5,27 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    role: "Frontend Developer",
-    company: "Private Software Company",
-    duration: "2023 - Present",
+    role: "Frontend Developer (React.js)",
+    company: "Qubitse Enterprises (Pvt.) Ltd.",
+    duration: "Nov 2023 - Oct 2025",
     points: [
-      "Developed responsive web applications using React & Next.js",
-      "Collaborated with team members and handled client requirements",
-      "Optimized UI performance and improved user experience",
+      "Built HAR.com frontend (React, TypeScript)",
+      "Developed dashboards with Recharts",
+      "Integrated Mapbox maps & geo-search",
+      "Created reusable component library",
+      "Used Redux Toolkit & RTK Query",
+      "Wrote tests with Jest",
     ],
   },
   {
-    role: "Electrical Engineer / IT Department",
+    role: "IT Support Specialist",
     company: "Pakistan Navy",
-    duration: "2019 - 2023",
+    duration: "Sep 2019 - Oct 2023",
     points: [
-      "Worked on technical systems and transitioned into IT development",
-      "Managed and maintained software-related tasks",
-      "Built strong problem-solving and teamwork skills",
+      "Supported 100+ systems",
+      "Handled troubleshooting & maintenance",
+      "Assisted software deployment",
+      "Managed updates & backups",
     ],
   },
 ];
@@ -40,7 +44,7 @@ export const Experience = () => {
   });
 
   return (
-    <section id="experience" ref={ref} className="w-full overflow-hidden py-20 px-4 md:px-10 ">
+    <section id="experience" ref={ref} className="w-full overflow-hidden md:py-20 px-4 md:px-10 ">
       
       {/* HEADER - Consistent with others */}
       <motion.div

@@ -4,7 +4,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="relative w-full py-7 bg-[#030014] border-t border-white/5 overflow-hidden">
+    <footer className="relative w-full py-7 mt-10 bg-[#030014] border-t border-white/5 overflow-hidden">
 
       {/* Soft Premium Glow Line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-[1px] bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />

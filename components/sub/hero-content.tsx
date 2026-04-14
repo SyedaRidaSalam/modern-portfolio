@@ -18,10 +18,8 @@ export const HeroContent = () => {
       animate="visible"
       className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 mt-32 md:mt-40 w-full z-[20] gap-10"
     >
-
       {/* LEFT SIDE */}
-      <div className="w-full md:w-1/2 flex flex-col gap-5 text-start">
-
+      <div className="w-full md:w-1/2 flex flex-col gap-5 text-center md:text-start items-center md:items-start">
         {/* Welcome Box */}
         <motion.div
           variants={slideInFromTop}
@@ -83,17 +81,16 @@ export const HeroContent = () => {
         {/* CTA BUTTONS */}
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-wrap gap-4 mt-6"
+          className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start w-full"
         >
-
           {/* View Projects */}
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             href="#projects"
-  className="relative px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center"
->
-   <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            className="relative px-6 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all flex items-center justify-center"
+          >
+            <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
             <span className="relative z-10">View Projects</span>
           </motion.a>
 
@@ -103,20 +100,19 @@ export const HeroContent = () => {
             whileTap={{ scale: 0.95 }}
             href="/resume.pdf"
             target="_blank"
-  className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
->
-  <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+            className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
+          >
+            <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
             <span className="relative z-10">Download Resume</span>
           </motion.a>
-
         </motion.div>
       </div>
 
       {/* RIGHT SIDE IMAGE */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full md:w-1/2 flex justify-center items-center"
+        className="hidden md:flex w-full md:w-1/2 justify-center items-center"
       >
         <Image
           src="/hero-bg.svg"
@@ -127,7 +123,6 @@ export const HeroContent = () => {
           className="select-none"
         />
       </motion.div>
-
     </motion.div>
   );
 };

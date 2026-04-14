@@ -6,50 +6,48 @@ import studyAnimation from "@/assets/space.json";
 
 const EDUCATION = [
   {
-    degree: "BS Computer Science",
-    institute: "University Name",
-    year: "2021 - 2025",
+    degree: "Master of Science in Computer Science",
+    institute: "Universität Siegen",
+    location: "Siegen, Germany",
+    year: "2025 - ongoing",
     logo: "/Uni_Siegen_Logo_klein.png",
-    details: "Software Engineering, AI, Web Development",
   },
   {
-    degree: "Intermediate (ICS)",
-    institute: "College Name",
-    year: "2019 - 2021",
+    degree: "Bachelor in Computer Science",
+    institute: "Virtual University of Pakistan",
+    location: "Karachi, Pakistan",
+    year: "2021 - 2025",
     logo: "/vupakistan_logo.jfif",
-    details: "Computer Science, Mathematics, Physics",
   },
 ];
 
 export const Education = () => {
   return (
-    <section id="education" className="py-20 px-6">
+    <section id="education" className="md:py-20 px-6">
 
-<motion.div
-      initial={{ opacity: 0, y: -20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="text-center py-20 relative"
-    >
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center py-20 relative"
+      >
 
+        <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
+          <span className="hidden sm:inline">🎓</span>
+          Academic Background
+        </h1>
 
-      {/* Main Heading */}
-      <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
-        <span className="hidden sm:inline">🎓</span>
-        Academic Background
-      </h1>
-      
-      {/* Subtitle */}
-      <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base tracking-wide opacity-80 px-4">
-        Exploring the vast universe of <span className="text-white font-medium">knowledge</span> and building the future of tech.
-      </p>
+        <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base tracking-wide opacity-80 px-4">
+          Exploring the vast universe of <span className="text-white font-medium">knowledge</span> and building the future of tech.
+        </p>
 
-      {/* Premium Divider with Glow */}
-      <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-        <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
-      </div>
-    </motion.div>
+        <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+          <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+        </div>
+
+      </motion.div>
+
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto mt-[-60px]">
 
         {/* LEFT ANIMATION */}
@@ -68,16 +66,15 @@ export const Education = () => {
               className="relative p-[2px] rounded-2xl group"
             >
 
-              {/* 🔥 Animated Gradient Border */}
+              {/* Gradient Border */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-70 blur-sm group-hover:opacity-100 animate-pulse" />
 
-              {/* Inner Card */}
+              {/* Card */}
               <div className="relative bg-white dark:bg-zinc-900 rounded-2xl p-6 shadow-xl">
 
-                {/* TOP SECTION */}
+                {/* TOP */}
                 <div className="flex items-center gap-4">
 
-                  {/* 🎓 University Logo */}
                   <motion.img
                     src={edu.logo}
                     alt={edu.institute}
@@ -90,18 +87,21 @@ export const Education = () => {
                       {edu.degree}
                     </h3>
 
-                    <p className="text-sm text-gray-500">
+                    {/* FIXED: Institute + Location INLINE (clean) */}
+                    <p className="text-sm text-gray-500 flex flex-wrap items-center gap-2">
                       {edu.institute}
+                      <span className="text-gray-400">•</span>
+                      <span className="text-gray-400">
+                        📍 {edu.location}
+                      </span>
                     </p>
+
                   </div>
                 </div>
 
-                {/* DETAILS */}
+                {/* YEAR */}
                 <div className="mt-4">
                   <p className="text-sm text-gray-400">{edu.year}</p>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300">
-                    {edu.details}
-                  </p>
                 </div>
 
               </div>

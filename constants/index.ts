@@ -12,17 +12,17 @@ export const SOCIALS = [
   {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/abdul_salam_wahab",
   },
   {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
+    name: "GitHub",
+    icon: RxGithubLogo,
+    link: "https://github.com/abdulsalamwahab-dev",
   },
   {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://x.com/_sanidhyy",
+    name: "LinkedIn",
+    icon: RxLinkedinLogo,
+    link: "https://www.linkedin.com/in/abdul-salam-wahab-981112231",
   },
 ] as const;
 
