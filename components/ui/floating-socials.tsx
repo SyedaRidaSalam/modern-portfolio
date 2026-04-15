@@ -14,7 +14,6 @@ export const FloatingSocials = () => {
   const [showBadge, setShowBadge] = useState(true);
   const [text, setText] = useState("");
 
-  // ✅ Type-safe ref
   const btnRef = useRef<HTMLButtonElement | null>(null);
 
   const fullText = "Hey 👋 Want to connect with me?";
@@ -37,14 +36,12 @@ export const FloatingSocials = () => {
     },
   ];
 
-  // 🎧 Sound
   const playClick = () => {
     const audio = new Audio("/click.wav");
     audio.volume = 0.3;
     audio.play();
   };
 
-  // 💬 Typing effect (only when open)
   useEffect(() => {
     if (!open) return;
 
@@ -58,7 +55,6 @@ export const FloatingSocials = () => {
     return () => clearInterval(interval);
   }, [open]);
 
-  // 🧲 Magnetic effect
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
     const btn = btnRef.current;
     if (!btn) return;
@@ -91,12 +87,10 @@ export const FloatingSocials = () => {
                        bg-white/10 backdrop-blur-xl border border-white/20 
                        shadow-2xl text-white"
           >
-            {/* Typing text */}
             <p className="text-sm mb-2 leading-snug">{text}</p>
 
             <div className="h-px bg-white/10 my-2" />
 
-            {/* Social links */}
             <div className="flex flex-col gap-1.5">
               {socials.map((item, i) => {
                 const Icon = item.icon;
@@ -137,8 +131,23 @@ export const FloatingSocials = () => {
                    text-white flex items-center justify-center 
                    relative 
                    shadow-[0_10px_30px_rgba(34,211,238,0.4)] 
-                   border border-white/20"
+                   border border-white/20 overflow-visible"
       >
+
+        {/* 🪐 Orbit Ring 1 */}
+        <motion.span
+          className="absolute w-20 h-20 rounded-full border border-cyan-400/20"
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+        />
+
+        {/* 🪐 Orbit Ring 2 */}
+        <motion.span
+          className="absolute w-28 h-28 rounded-full border border-purple-400/10"
+          animate={{ rotate: -360 }}
+          transition={{ repeat: Infinity, duration: 16, ease: "linear" }}
+        />
+
         {/* 🔴 Badge */}
         {showBadge && (
           <span className="absolute top-1 right-1 flex h-3 w-3">

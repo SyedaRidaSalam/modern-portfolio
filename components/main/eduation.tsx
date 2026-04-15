@@ -23,13 +23,13 @@ const EDUCATION = [
 
 export const Education = () => {
   return (
-    <section id="education" className=" px-6">
+    <section id="education" className="px-6">
 
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center py-20 relative"
+        className="text-center py-10 relative"
       >
 
         <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
