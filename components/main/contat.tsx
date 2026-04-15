@@ -37,28 +37,44 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative xl:py-20 px-6">
+    <section id="contact" className="relative pt-20 xl:py-20 px-6">
       {/* HEADER */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center py-20 relative"
-      >
-        <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
-          ☎️ Get In Touch
-        </h1>
+      <div className="max-w-7xl mx-auto px-6 text-center mb-20">
+        <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="px-4 text-center overflow-hidden"
+>
+  {/* Small Tagline - Reduced spacing for mobile */}
+  <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+    Let&apos;s Connect
+  </h2>
 
-        <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base">
-          Have a project in mind? Let’s create something{" "}
-          <span className="text-white font-medium">legendary</span> together.
-        </p>
-           {/* Premium Divider with Glow - Same as Academic Journey */}
-        <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-          <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
-        </div>
-      </motion.div>
+  {/* Main Heading - text-3xl ensures it stays within mobile boundaries */}
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.1]">
+    <span className="inline text-2xl md:text-5xl">☎️</span>
+    <span>Get In</span>{" "}
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+      Touch
+    </span>
+  </h1>
+
+  {/* Description - Adjusted for better mobile readability */}
+  <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+    Have a vision or a complex challenge? Let&apos;s collaborate to build{" "}
+    <span className="text-white font-medium">high-impact solutions</span> and
+    turn your ideas into <span className="text-cyan-400 font-medium">reality.</span>
+  </p>
+
+  {/* Premium Divider - Balanced for mobile view */}
+  <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+    <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+  </div>
+</motion.div>
+      </div>
 
       {/* GRID */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
@@ -70,7 +86,8 @@ export const Contact = () => {
           </h2>
 
           <p>
-            Abdul Salaam Wahab, Full Stack Developer focused on scalable apps, SaaS systems, and clean UI
+            Abdul Salaam Wahab, Full Stack Developer focused on scalable apps,
+            SaaS systems, and clean UI
           </p>
 
           <p>📧 abd.islam456@gmail.com</p>
@@ -119,18 +136,46 @@ export const Contact = () => {
                 required
               />
 
-              <button
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={loading}
-                className="relative py-4 rounded-xl bg-gradient-to-r from-purple-500 to-cyan-500 text-white font-semibold overflow-hidden group/btn shadow-[0_0_15px_rgba(168,85,247,0.4)] hover:shadow-[0_0_25px_rgba(168,85,247,0.6)] transition-all"
+                className="relative py-4 rounded-xl bg-gradient-to-r from-purple-600 to-cyan-600 text-white font-bold tracking-widest uppercase text-xs overflow-hidden group/btn shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_30px_rgba(168,85,247,0.6)] transition-all flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {/* Shimmer effect inside button */}
+                {/* PREVIEW SHIMMER - Exactly like your other buttons */}
                 <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
-                <span className="relative z-10">
-                  {loading ? "SENDING..." : "SEND MESSAGE"}
+                <span className="relative z-10 flex items-center gap-2">
+                  {loading ? (
+                    <>
+                      <svg
+                        className="animate-spin h-4 w-4 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        ></path>
+                      </svg>
+                      SENDING...
+                    </>
+                  ) : (
+                    "SEND MESSAGE"
+                  )}
                 </span>
-              </button>
+              </motion.button>
 
               {success && (
                 <p className="text-green-400 text-center text-sm animate-bounce">

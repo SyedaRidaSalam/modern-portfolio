@@ -13,31 +13,44 @@ export const SkillText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
 
+{/* TECHNICAL SKILLS HEADER - Premium & Consistent Format */}
+<div className="max-w-7xl mx-auto px-6 text-center mb-5">
 <motion.div
-  initial={{ opacity: 0, y: -20 }}
+  initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.6 }}
-  className="text-center py-20 relative"
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="px-4 text-center overflow-hidden" // Mobile safety wrap
 >
-  {/* Main Heading - Consistent Gradient & Icon Style */}
-  <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
-    <span className="hidden sm:inline">🛠️</span>
-    Technical Skills
+  {/* Small Tagline - Optimized tracking for mobile */}
+  <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+    My Tech Stack
+  </h2>
+
+  {/* Main Heading - Responsive text-3xl for mobile */}
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.1]">
+    <span className="inline text-2xl md:text-5xl">🛠️</span>
+    <span>Technical</span>{" "}
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+      Skills
+    </span>
   </h1>
-  
-  {/* Subtitle - Consistent Typography & Spacing */}
-  <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base tracking-wide opacity-80 px-4">
-    The tools and technologies I use to turn <span className="text-white font-medium">complex problems</span> into elegant solutions.
+
+  {/* Impactful Description - Mobile leading and size adjustment */}
+  <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+    A curated selection of tools and technologies I leverage to build{" "}
+    <span className="text-white font-medium">robust, scalable systems</span>{" "}
+    and solve{" "}
+    <span className="text-cyan-400 font-medium">intricate architectural challenges.</span>
   </p>
 
-  {/* Premium Shimmer Divider - Exact same as others */}
-  <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
-    {/* Animated Shimmer */}
+  {/* Premium Divider - Consistent width for mobile */}
+  <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-    {/* Background Glow Layer */}
     <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
   </div>
 </motion.div>
+</div>
 
    
 

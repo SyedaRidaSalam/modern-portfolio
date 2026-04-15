@@ -26,61 +26,44 @@ export const SOCIALS = [
   },
 ] as const;
 
+// Isko constants/index.ts mein replace kar lo.
 export const FRONTEND_SKILL = [
-  { skill_name: "HTML", image: "html.png", width: 80, height: 80 },
-  { skill_name: "CSS", image: "css.png", width: 80, height: 80 },
-  { skill_name: "JavaScript", image: "js.png", width: 65, height: 65 },
-  { skill_name: "TypeScript", image: "ts.png", width: 80, height: 80 },
-  { skill_name: "Tailwind CSS", image: "tailwind.png", width: 80, height: 80 },
-  { skill_name: "React", image: "react.png", width: 80, height: 80 },
-  { skill_name: "Next.js", image: "next.png", width: 80, height: 80 },
-  { skill_name: "Redux", image: "redux.png", width: 80, height: 80 },
-  { skill_name: "ShadCN UI", image: "shadcn.png", width: 80, height: 80 },
-  { skill_name: "React Query", image: "reactquery.png", width: 80, height: 80 },
-  { skill_name: "Material UI", image: "mui.png", width: 80, height: 80 },
+  { skill_name: "HTML", image: "html.png", width: 70, height: 70 },
+  { skill_name: "CSS", image: "css.png", width: 70, height: 70 },
+  { skill_name: "JavaScript", image: "js.png", width: 60, height: 60 },
+  { skill_name: "TypeScript", image: "ts.png", width: 70, height: 70 },
+  { skill_name: "React", image: "react.png", width: 70, height: 70 },
+  { skill_name: "Next.js", image: "next.png", width: 70, height: 70 },
+  { skill_name: "Tailwind CSS", image: "tailwind.png", width: 70, height: 70 },
+  { skill_name: "Material UI", image: "mui.png", width: 70, height: 70 },
+  { skill_name: "ShadCN UI", image: "shadcn.png", width: 70, height: 70 },
+  { skill_name: "Redux", image: "redux.png", width: 70, height: 70 },
+  { skill_name: "React Query", image: "reactquery.png", width: 70, height: 70 },
+  { skill_name: "Zustand", image: "zustand.png", width: 65, height: 65 },
 ] as const;
 
 export const BACKEND_SKILL = [
-  { skill_name: "Node.js", image: "node.png", width: 80, height: 80 },
-  { skill_name: "Express.js", image: "express.png", width: 80, height: 80 },
-
-  // Databases
+  { skill_name: "Node.js", image: "node.png", width: 70, height: 70 },
+  { skill_name: "Express.js", image: "express.png", width: 70, height: 70 },
   { skill_name: "MongoDB", image: "mongodb.png", width: 40, height: 40 },
-  { skill_name: "PostgreSQL", image: "postgresql.png", width: 70, height: 70 },
-  { skill_name: "MySQL", image: "mysql.png", width: 70, height: 70 },
-  { skill_name: "Prisma", image: "prisma.png", width: 70, height: 70 },
-  { skill_name: "Neon DB", image: "neon.png", width: 80, height: 80 },
-
-  // Backend-as-a-Service / Serverless
-  { skill_name: "Firebase", image: "firebase.png", width: 55, height: 55 },
-  { skill_name: "Convex", image: "convex.png", width: 80, height: 80 },
-
-  // Cloud
-  { skill_name: "AWS", image: "aws.png", width: 80, height: 80 },
-
-  // Auth / SaaS layer
-  { skill_name: "Clerk Auth", image: "ClerkAuth.png", width: 80, height: 80 },
-
-  // AI / LLM
-  { skill_name: "LLM Integration", image: "ai.svg", width: 80, height: 80 },
-
-  // Media / APIs
-  { skill_name: "ImageKit", image: "imagekit.png", width: 80, height: 80 },
+  { skill_name: "PostgreSQL", image: "postgresql.png", width: 65, height: 65 },
+  { skill_name: "MySQL", image: "mysql.png", width: 65, height: 65 },
+  { skill_name: "Prisma", image: "prisma.png", width: 65, height: 65 },
+  { skill_name: "Neon DB", image: "neon.png", width: 70, height: 70 },
+  { skill_name: "Firebase", image: "firebase.png", width: 50, height: 50 },
+  { skill_name: "Convex", image: "convex.png", width: 70, height: 70 },
+  { skill_name: "Clerk Auth", image: "ClerkAuth.png", width: 70, height: 70 },
+  { skill_name: "Inngest", image: "inngest.png", width: 70, height: 70 },
 ] as const;
 
 export const FULLSTACK_SKILL = [
-  { skill_name: "Docker", image: "docker.png", width: 70, height: 70 },
-
-  // State / modern tooling
-  { skill_name: "Zustand", image: "zustand.png", width: 150, height: 80 },
-
-  // API / architecture mindset
-  { skill_name: "REST APIs", image: "api.png", width: 70, height: 70 },
-  { skill_name: "SaaS Architecture", image: "saas.png", width: 70, height: 70 },
-    { skill_name: "Inngest", image: "inngest.png", width: 180, height: 80 },
+  { skill_name: "Docker", image: "docker.png", width: 65, height: 65 },
+  { skill_name: "AWS", image: "aws.png", width: 70, height: 70 },
+  { skill_name: "LLM Integration", image: "ai.svg", width: 65, height: 65 },
+  { skill_name: "REST APIs", image: "api.png", width: 65, height: 65 },
+  { skill_name: "SaaS Architecture", image: "saas.png", width: 65, height: 65 },
+  { skill_name: "ImageKit", image: "imagekit.png", width: 65, height: 65 },
 ] as const;
-
-
 export const PROJECTS = [
   {
     title: "Modern Next.js 14 Portfolio",

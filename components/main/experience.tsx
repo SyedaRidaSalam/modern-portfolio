@@ -5,27 +5,29 @@ import { useRef } from "react";
 
 const experiences = [
   {
-    role: "Frontend Developer (React.js)",
+    role: "Full Stack Developer | MERN",
     company: "Qubitse Enterprises (Pvt.) Ltd.",
-    duration: "Nov 2023 - Oct 2025",
+    duration: "Mar 2023 - Oct 2025",
+    location: "Karachi, Pakistan",
     points: [
-      "Built HAR.com frontend (React, TypeScript)",
-      "Developed dashboards with Recharts",
-      "Integrated Mapbox maps & geo-search",
-      "Created reusable component library",
-      "Used Redux Toolkit & RTK Query",
-      "Wrote tests with Jest",
+      "Spearheaded MERN stack development for high-traffic platforms like HAR.com, optimizing load speeds by 20%.",
+      "Integrated Mapbox API for complex geospatial search and property analytics using TypeScript.",
+      "Architected type-safe API layers with RTK Query and Zod validation to enhance system reliability.",
+      "Developed an internal React component library, reducing overall UI development time by 25%.",
+      "Leveraged Node.js and PostgreSQL to build scalable, high-performance backend microservices.",
     ],
   },
   {
-    role: "IT Support Specialist",
+    role: "Junior Frontend Developer",
     company: "Pakistan Navy",
-    duration: "Sep 2019 - Oct 2023",
+    duration: "Mar 2021 - Feb 2023",
+    location: "Karachi, Pakistan",
     points: [
-      "Supported 100+ systems",
-      "Handled troubleshooting & maintenance",
-      "Assisted software deployment",
-      "Managed updates & backups",
+      "Digitized manual reporting processes by engineering internal web-based tracking tools using JavaScript.",
+      "Modernized legacy internal interfaces to improve data accessibility and entry speed for technical units.",
+      "Developed secure frontend solutions strictly adhering to high-security departmental protocols.",
+      "Maintained 100+ systems in a high-security environment, ensuring 99.9% operational uptime.",
+      "Authored technical SOPs for internal software, streamlining the onboarding process for new staff.",
     ],
   },
 ];
@@ -40,41 +42,62 @@ export const Experience = () => {
   const scaleY = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
 
   return (
-    <section id="experience" ref={ref} className="w-full overflow-hidden  xl:pt-28 px-4 md:px-10 ">
-      
-      {/* HEADER - Consistent with others */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center py-20 relative"
-      >
-        <h1 className="text-[36px] md:text-[42px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center gap-3">
-          <span className="hidden sm:inline">💼</span>
-          Professional Experience
-        </h1>
-        <p className="text-gray-400 mt-4 max-w-lg mx-auto text-sm md:text-base tracking-wide opacity-80 px-4">
-          A timeline of my <span className="text-white font-medium">technical journey</span> and contributions.
-        </p>
-        <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-          <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
-        </div>
-      </motion.div>
+    <section
+      id="experience"
+      ref={ref}
+      className="w-full overflow-hidden xl:pt-28 px-4 md:px-10"
+    >
+      {/* HEADER */}
+      <div className="max-w-7xl mx-auto px-6 text-center mb-20">
+  <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="px-4 text-center" // Padding added for mobile safety
+>
+  {/* Small Tagline - Reduced tracking for mobile clarity */}
+  <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+    Career Path
+  </h2>
+
+  {/* Main Heading - Responsive Font Sizes & Wrapping */}
+  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.1]">
+    <span className="inline text-2xl md:text-5xl">💼</span>
+    <span>Professional</span>
+    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+      Experience
+    </span>
+  </h1>
+
+  {/* Description - Adjusted text size and line height for mobile */}
+  <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose">
+    A chronological timeline of my evolution from system administration to{" "}
+    <span className="text-white font-medium">full-stack software engineering</span>{" "}
+    and scalable{" "}
+    <span className="text-cyan-400 font-medium">system architecture.</span>
+  </p>
+
+  {/* Premium Divider - Scaled down for mobile */}
+  <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
+    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+    <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+  </div>
+</motion.div>
+      </div>
 
       {/* TIMELINE SECTION */}
-      <div className="relative w-full max-w-4xl mx-auto"> 
-        
-        {/* 🔥 Danda (Timeline Line) that Animates & Brightens on Scroll */}
+      <div className="relative w-full max-w-5xl mx-auto">
+        {/* Animated Timeline Line with Glow */}
         <div className="absolute left-4 md:left-1/2 top-0 w-[3px] h-full bg-white/10 transform md:-translate-x-1/2 rounded-full overflow-hidden">
-           <motion.div 
-             style={{ scaleY }}
-             className="w-full h-full bg-gradient-to-b from-purple-500 via-cyan-400 to-purple-600 origin-top shadow-[0_0_15px_rgba(6,182,212,0.8)]"
-           />
+          <motion.div
+            style={{ scaleY }}
+            className="w-full h-full bg-gradient-to-b from-purple-500 via-cyan-400 to-purple-600 origin-top shadow-[0_0_15px_rgba(6,182,212,0.8)]"
+          />
         </div>
 
         {experiences.map((exp, index) => (
@@ -83,35 +106,61 @@ export const Experience = () => {
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className={`mb-24 flex flex-col md:flex-row items-center w-full relative ${
+            className={`mb-20 flex flex-col md:flex-row items-center w-full relative ${
               index % 2 === 0 ? "md:justify-start" : "md:justify-end"
             }`}
           >
             {/* Animated Pulsing Dot */}
             <div className="absolute left-2.5 md:left-1/2 transform md:-translate-x-1/2 z-20">
-               <div className="w-4 h-4 bg-white rounded-full border-2 border-purple-500 shadow-[0_0_10px_#a855f7]" />
+              <div className="w-4 h-4 bg-white rounded-full border-2 border-purple-500 shadow-[0_0_10px_#a855f7] animate-pulse" />
             </div>
 
-            {/* CARD with Glow Border (Same as Education) */}
-            <motion.div 
-              whileHover={{ scale: 1.03 }}
-              className="relative p-[2px] rounded-2xl group w-[90%] ml-12 md:ml-0 md:w-[45%]"
+            {/* CARD */}
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className={`relative p-[2px] rounded-2xl group w-[90%] ml-12 md:ml-0 md:w-[46%] lg:w-[44%]`}
             >
               {/* Animated Gradient Border */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-70 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
 
-              {/* Card Inner */}
-              <div className="relative bg-zinc-900 rounded-2xl p-6 shadow-xl">
-                <h2 className="text-xl font-bold text-white mb-1">{exp.role}</h2>
-                <p className="text-purple-400 text-sm mb-4 font-semibold uppercase tracking-wider">
-                  {exp.company} • {exp.duration}
-                </p>
+              {/* Card Inner - Refined Design */}
+              <div className="relative bg-zinc-900/95 backdrop-blur-md rounded-2xl p-6 md:p-8 shadow-2xl">
+                {/* Header Section of Card */}
+                <div className="mb-6">
+                  <h2 className="text-xl md:text-2xl font-bold text-white leading-tight">
+                    {exp.role.split("|")[0]}
+                    {exp.role.includes("|") && (
+                      <span className="text-purple-500 font-medium text-lg md:text-xl ml-2">
+                        ~ {exp.role.split("|")[1].trim()}
+                      </span>
+                    )}
+                  </h2>
 
-                <ul className="text-gray-300 text-sm space-y-3">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-2">
+                    <span className="text-cyan-400 text-sm font-bold uppercase tracking-wider">
+                      {exp.company}
+                    </span>
+                    <span className="hidden sm:block text-gray-600">•</span>
+                    <span className="text-gray-400 text-xs font-medium">
+                      {exp.duration}
+                    </span>
+                    <span className="hidden sm:block text-gray-600">•</span>
+                    <span className="text-gray-500 text-[11px] uppercase tracking-tighter italic">
+                      {exp.location}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content Section */}
+                <ul className="text-gray-300 text-sm md:text-[14px] space-y-4">
                   {exp.points.map((point, i) => (
-                    <li key={i} className="flex items-start gap-2 group/item">
-                      <span className="text-cyan-500 mt-1">•</span>
-                      <span className="group-hover/item:text-white transition-colors">{point}</span>
+                    <li key={i} className="flex items-start gap-3 group/item">
+                      <span className="text-purple-500 text-lg leading-none mt-1">
+                        ▹
+                      </span>
+                      <span className="group-hover/item:text-white transition-colors leading-relaxed">
+                        {point}
+                      </span>
                     </li>
                   ))}
                 </ul>

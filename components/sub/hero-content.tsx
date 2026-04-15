@@ -19,34 +19,35 @@ export const HeroContent = () => {
       className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 mt-32 md:mt-40 w-full z-[20] gap-10"
     >
       {/* LEFT SIDE */}
-      <div className="w-full xl:w-1/2 flex flex-col gap-5 text-center xl:text-start items-center xl:items-start">
-        {/* Welcome Box */}
+      <div className="w-full xl:w-1/2 flex flex-col gap-6 text-center xl:text-start items-center xl:items-start px-4 md:px-0 z-20">
+        {/* Welcome Box - Made more sophisticated with darker colors and finer border */}
         <motion.div
           variants={slideInFromTop}
-          className="inline-flex items-center gap-2 py-[6px] px-[12px] border border-[#7042f88b] rounded-full bg-white/5 backdrop-blur-md w-fit"
+          className="inline-flex items-center gap-2 py-[5px] px-[12px] border border-cyan-800/40 rounded-full bg-[#030014] backdrop-blur-sm w-fit shadow-[0_0_15px_rgba(34,211,238,0.15)]"
         >
-          <SparklesIcon className="text-[#b49bff] h-5 w-5" />
-          <h1 className="text-[13px] text-gray-200">
+          <SparklesIcon className="text-cyan-400 h-4 w-4 animate-pulse" />
+          <h1 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.25em] text-cyan-200/80">
             Full Stack Developer Portfolio
           </h1>
         </motion.div>
 
-        {/* Name */}
+        {/* Name & Title Section - Completely Redesigned Hierarchy */}
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 text-3xl md:text-4xl font-bold text-white"
+          className="flex flex-col gap-3 md:gap-4"
         >
-          <span>
+          {/* Refined Name with multi-color gradient and precise glow */}
+          <h1 className="text-4xl md:text-4xl lg:text-[45px] font-black text-white leading-[1.05] tracking-tight">
             Hi, I&apos;m{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-cyan-400 to-emerald-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">
               Abdul Salam Wahab
             </span>
-          </span>
+          </h1>
 
-          {/* Typewriter */}
-          <div className="text-xl md:text-2xl h-[40px]">
-            <span className="text-gray-300">A </span>
-            <span className="text-cyan-400">
+          {/* Elegant Typewriter Subheading with specific color hierarchy */}
+          <div className="text-xl md:text-3xl font-extrabold h-[40px] flex items-center justify-center xl:justify-start gap-3">
+            <span className="text-gray-400 font-light italic">A </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
               <Typewriter
                 words={[
                   "Full Stack Developer",
@@ -63,22 +64,32 @@ export const HeroContent = () => {
           </div>
         </motion.div>
 
-        {/* Description */}
+        {/* Description - Made it 'Breathable' with subtle semantic accents */}
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-gray-400 text-base md:text-lg leading-relaxed max-w-xl"
+          className="text-gray-400 text-sm md:text-lg leading-relaxed md:leading-loose max-w-xl font-light tracking-wide px-2 md:px-0"
         >
-          Passionate Software Engineer building{" "}
-          <span className="text-white">modern web apps</span>,{" "}
-          <span className="text-white">SaaS platforms</span>, and{" "}
-          <span className="text-white">AI-powered tools</span> with clean UI,
-          scalable architecture, and smooth user experience.
+          Passionate{" "}
+          <span className="text-white font-medium">Software Engineer</span>{" "}
+          specialized in building{" "}
+          <span className="text-white border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+            modern web apps
+          </span>
+          ,{" "}
+          <span className="text-white border-b border-cyan-500/40 hover:border-cyan-500/80 transition pb-0.5">
+            SaaS platforms
+          </span>
+          , and{" "}
+          <span className="text-white border-b border-emerald-500/40 hover:border-emerald-500/80 transition pb-0.5">
+            AI-powered tools
+          </span>{" "}
+          with clean UI and scalable architectures.
         </motion.p>
 
-        {/* CTA BUTTONS */}
+        {/* CTA BUTTONS - YOUR UNTOUCHED UNIFORM DESIGN */}
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-wrap gap-4 mt-6 justify-center xl:justify-start w-full"
+          className="flex flex-wrap gap-4 mt-8 md:mt-10 justify-center xl:justify-start w-full"
         >
           {/* View Projects */}
           <motion.a
@@ -100,7 +111,6 @@ export const HeroContent = () => {
             className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
           >
             <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
             <span className="relative z-10">Download Resume</span>
           </motion.a>
         </motion.div>
