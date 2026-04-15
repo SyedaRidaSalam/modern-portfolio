@@ -22,7 +22,7 @@ export const SkillText = () => {
           className="px-4 text-center overflow-hidden" // Mobile safety wrap
         >
           {/* Small Tagline - Optimized tracking for mobile */}
-          <h2 className="text-[10px] md:text-\sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+          <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
             My Tech Stack
           </h2>
 
