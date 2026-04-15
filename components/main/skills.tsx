@@ -11,7 +11,7 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden md:py-20 py-10 px-4"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden md:py-5 py-10 px-4"
     >
       <SkillText />
 

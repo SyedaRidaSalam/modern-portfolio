@@ -19,7 +19,7 @@ export const HeroContent = () => {
       className="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 mt-32 md:mt-40 w-full z-[20] gap-10"
     >
       {/* LEFT SIDE */}
-      <div className="w-full md:w-1/2 flex flex-col gap-5 text-center md:text-start items-center md:items-start">
+      <div className="w-full xl:w-1/2 flex flex-col gap-5 text-center xl:text-start items-center xl:items-start">
         {/* Welcome Box */}
         <motion.div
           variants={slideInFromTop}
@@ -52,7 +52,7 @@ export const HeroContent = () => {
                   "Full Stack Developer",
                   "Software Engineer",
                   "SaaS Developer",
-                  "AI Tool Builder",
+                  "Smart AI Tool Builder",
                   "UI Architect",
                 ]}
                 loop={0}
@@ -81,7 +81,7 @@ export const HeroContent = () => {
         {/* CTA BUTTONS */}
         <motion.div
           variants={slideInFromLeft(1)}
-          className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start w-full"
+          className="flex flex-wrap gap-4 mt-6 justify-center xl:justify-start w-full"
         >
           {/* View Projects */}
           <motion.a
@@ -112,7 +112,7 @@ export const HeroContent = () => {
       {/* RIGHT SIDE IMAGE */}
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="hidden md:flex w-full md:w-1/2 justify-center items-center"
+        className="hidden xl:flex w-full md:w-1/2 justify-center items-center"
       >
         <Image
           src="/hero-bg.svg"

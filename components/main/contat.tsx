@@ -37,7 +37,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative md:py-28 px-6">
+    <section id="contact" className="relative xl:py-20 px-6">
       {/* HEADER */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}

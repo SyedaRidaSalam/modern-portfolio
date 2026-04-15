@@ -44,7 +44,7 @@ export const Experience = () => {
   });
 
   return (
-    <section id="experience" ref={ref} className="w-full overflow-hidden md:py-20 px-4 md:px-10 ">
+    <section id="experience" ref={ref} className="w-full overflow-hidden  xl:pt-28 px-4 md:px-10 ">
       
       {/* HEADER - Consistent with others */}
       <motion.div

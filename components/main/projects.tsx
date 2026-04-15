@@ -46,7 +46,7 @@ export const Projects = () => {
   const [active, setActive] = useState(PROJECT_DATA[0]);
 
   return (
-    <section id="projects" className="overflow-x-hidden md:py-20 px-4 sm:px-6 ">
+    <section id="projects" className="overflow-x-hidden md:py-20 xl:py-10 px-4 sm:px-6 ">
       {/* TITLE */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}

@@ -23,7 +23,7 @@ const EDUCATION = [
 
 export const Education = () => {
   return (
-    <section id="education" className="md:py-20 px-6">
+    <section id="education" className=" px-6">
 
       <motion.div
         initial={{ opacity: 0, y: -20 }}
