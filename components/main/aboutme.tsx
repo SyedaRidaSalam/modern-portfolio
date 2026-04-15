@@ -32,22 +32,21 @@ export const About = () => {
             </span>
           </h1>
 
-          {/* Description - Adjusted text size (text-sm to text-base) for better mobile reading */}
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-            Bridging the gap between{" "}
-            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              robust architectures
-            </span>{" "}
-            and seamless user experiences. Specializing in{" "}
-            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              scalable web apps
-            </span>{" "}
-            and{" "}
-            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              AI-driven tools
-            </span>{" "}
-            from Siegen, Germany.
-          </p>
+    <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+  Bridging the gap between{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    robust architectures
+  </span>{" "}
+  and seamless user experiences. Engineering{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    scalable web apps
+  </span>{" "}
+  and{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    AI-driven tools
+  </span>{" "}
+  from Siegen, Germany.
+</p>
 
           {/* Premium Divider - Scaled down for mobile symmetry */}
           <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
@@ -188,39 +187,28 @@ export const About = () => {
               </div>
 
               <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                I specialize in architecting{" "}
-                <span className="text-white font-semibold">
-                  AI-integrated platforms
-                </span>{" "}
-                and modern SaaS products. From{" "}
-                <span className="text-white font-medium">
-                  deep learning models
-                </span>{" "}
-                for automated detection to autonomous robotics systems, I build
-                at the intersection of intelligence and performance.
+                I am a Full Stack Software Engineer focused on engineering
+                high-performance web applications and modern SaaS products. From
+                architecting complex features for enterprise-level platforms
+                like har.com to building AI-integrated tools and interactive
+                data dashboards, I bridge the gap between robust backend logic
+                and seamless frontend experiences.
                 <br />
                 <br />
-                My toolkit is focused on{" "}
-                <span className="text-white font-medium">
-                  Next.js, React, and Python
-                </span>
-                , ensuring that every product is production-ready,
-                lightning-fast, and built to handle
-                <span className="text-white font-medium">
-                  {" "}
-                  enterprise-level scale
-                </span>
-                .
+                Leveraging a modern stack of Next.js, TypeScript, and Node.js, I
+                ensure every product is type-safe, lightning-fast, and
+                engineered to handle enterprise-level scale with clean,
+                maintainable architecture.
               </p>
 
-              {/* Updated Tags */}
+              {/* Strategic Skill Tags */}
               <div className="flex flex-wrap gap-2.5 mt-7">
                 {[
                   "Full-Stack Development",
-                  "Modern Frontend UI",
-                  "AI-Powered Features",
-                  "Backend & APIs",
-                  "Performance Optimization",
+                  "SaaS Development",
+                  "AI & LLM Integration",
+                  "Interactive Dashboards",
+                  "System Optimization",
                 ].map((item) => (
                   <span
                     key={item}

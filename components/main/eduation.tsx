@@ -49,17 +49,17 @@ export const Education = () => {
 
           {/* Description - Optimized for readability on small screens */}
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-            An exploration of{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              theoretical foundations
-            </span>{" "}
-            and advanced engineering principles, dedicated to shaping the future
-            through{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              continuous learning
-            </span>{" "}
-            and research.
-          </p>
+  A journey through 
+  {" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    advanced computer science
+  </span>{" "}
+  and research-driven engineering, dedicated to solving complex problems 
+  through{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    Master's level specialization.
+  </span>
+</p>
 
           {/* Premium Divider - Balanced width */}
           <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">

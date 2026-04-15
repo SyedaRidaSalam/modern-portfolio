@@ -35,17 +35,16 @@ export const SkillText = () => {
             </span>
           </h1>
 
-          {/* Impactful Description - Mobile leading and size adjustment */}
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-            A curated selection of tools and technologies I leverage to build{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              robust, scalable systems
-            </span>{" "}
-            and solve{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              intricate architectural challenges.
-            </span>
-          </p>
+<p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+  A curated selection of technologies I leverage to architect{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    robust, scalable systems
+  </span>{" "}
+  and solve{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    complex engineering challenges.
+  </span>
+</p>
 
           {/* Premium Divider - Consistent width for mobile */}
           <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">

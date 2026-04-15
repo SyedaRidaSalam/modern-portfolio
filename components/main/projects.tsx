@@ -74,18 +74,19 @@ export const Projects = () => {
             </span>
           </h1>
 
-          {/* Description - Optimized for German market/recruiter readability on mobile */}
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-            A showcase of my{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              technical craftsmanship
-            </span>
-            , featuring innovative architectures and{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              full-stack solutions
-            </span>{" "}
-            built with precision and performance in mind.
-          </p>
+     <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+  A showcase of 
+  {" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    technical craftsmanship
+  </span>
+  , featuring AI-integrated platforms and 
+  {" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    full-stack solutions
+  </span>{" "}
+  engineered for scalability, performance, and real-world impact.
+</p>
 
           {/* Premium Divider - Consistent with the rest of your sections */}
           <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">

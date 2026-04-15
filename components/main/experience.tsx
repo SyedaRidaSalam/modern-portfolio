@@ -10,24 +10,20 @@ const experiences = [
     duration: "Mar 2023 - Oct 2025",
     location: "Karachi, Pakistan",
     points: [
-      "Spearheaded MERN stack development for high-traffic platforms like HAR.com, optimizing load speeds by 20%.",
-      "Integrated Mapbox API for complex geospatial search and property analytics using TypeScript.",
-      "Architected type-safe API layers with RTK Query and Zod validation to enhance system reliability.",
-      "Developed an internal React component library, reducing overall UI development time by 25%.",
-      "Leveraged Node.js and PostgreSQL to build scalable, high-performance backend microservices.",
+      "Engineered features for high-traffic platforms like har.com, optimizing load speeds by 20% through SSR and memoization.",
+      "Architected interactive analytics dashboards and Mapbox-driven geospatial search, improving data processing speed by 25%.",
+      "Developed scalable Node.js microservices and type-safe API layers using Zod, reducing production runtime errors by 40%."
     ],
   },
   {
     role: "Junior Frontend Developer",
-    company: "Pakistan Navy",
-    duration: "Mar 2021 - Feb 2023",
-    location: "Karachi, Pakistan",
-    points: [
-      "Digitized manual reporting processes by engineering internal web-based tracking tools using JavaScript.",
-      "Modernized legacy internal interfaces to improve data accessibility and entry speed for technical units.",
-      "Developed secure frontend solutions strictly adhering to high-security departmental protocols.",
-      "Maintained 100+ systems in a high-security environment, ensuring 99.9% operational uptime.",
-      "Authored technical SOPs for internal software, streamlining the onboarding process for new staff.",
+  company: "Pakistan Navy",
+  duration: "Mar 2021 - Feb 2023",
+  location: "Karachi, Pakistan",
+  points: [
+    "Digitized manual reporting workflows by engineering secure internal web tools, reducing administrative processing time by 40%.",
+    "Modernized mission-critical legacy interfaces using Modern JavaScript (ES6+), increasing data entry accuracy and speed by 30%.",
+    "Maintained 100+ high-security terminals with automated monitoring scripts, achieving 99.9% operational uptime in a high-security environment."
     ],
   },
 ];
@@ -72,17 +68,17 @@ export const Experience = () => {
             </span>
           </h1>
 
-          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose">
-            A chronological timeline of my evolution from system administration
-            to{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              full-stack software engineering
-            </span>{" "}
-            and scalable{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              system architecture.
-            </span>
-          </p>
+         <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose">
+  A chronological timeline of my evolution from frontend engineering 
+  to{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    full-stack software engineering
+  </span>{" "}
+  and high-performance{" "}
+  <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+    enterprise platform architecture.
+  </span>
+</p>
 
           <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />

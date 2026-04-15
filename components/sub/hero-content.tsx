@@ -27,7 +27,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-cyan-400 h-4 w-4 animate-pulse" />
           <h1 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.25em] text-cyan-200/80">
-           Solving real-world problems
+           Building Future-Ready Solutions
           </h1>
         </motion.div>
 
@@ -71,17 +71,17 @@ export const HeroContent = () => {
         >
           Passionate{" "}
           <span className="text-white border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">Software Engineer</span>{" "}
-          specialized in building{" "}
+          focused on engineering{" "}
           <span className="text-white border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-            modern web apps
+            high-performance apps
           </span>
           ,{" "}
           <span className="text-white border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-            SaaS platforms
+            scalable SaaS platforms
           </span>
           , and{" "}
           <span className="text-white border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-            AI-powered tools
+            AI-integrated tools
           </span>{" "}
           with clean UI and scalable architectures.
         </motion.p>
@@ -103,16 +103,17 @@ export const HeroContent = () => {
           </motion.a>
 
           {/* Resume */}
-          <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="/resume.pdf"
-            target="_blank"
-            className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
-          >
-            <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-            <span className="relative z-10">Download Resume</span>
-          </motion.a>
+      <motion.a
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  href="/Abdul-Salam-Wahab_Full-Stack-Developer_CV.pdf" // Ye public folder se file uthayega
+  download="Abdul-Salam-Wahab_Full-Stack-Developer_CV.pdf" // Isse click pe download start hoga aur file ka ye naam show hoga
+  target="_blank"
+  className="relative px-6 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-bold tracking-widest uppercase overflow-hidden group/btn hover:border-white/20 transition-all flex items-center justify-center"
+>
+  <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+  <span className="relative z-10">Download Resume</span>
+</motion.a>
         </motion.div>
       </div>
 

@@ -61,16 +61,15 @@ export const Contact = () => {
             </span>
           </h1>
 
-          {/* Description - Adjusted for better mobile readability */}
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-            Have a vision or a complex challenge? Let&apos;s collaborate to
-            build{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              high-impact solutions
+            Have a vision or a complex technical challenge? Let's collaborate to
+            engineer{" "}
+            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              scalable digital products
             </span>{" "}
-            and turn your ideas into{" "}
-            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
-              reality.
+            and turn your strategic goals into{" "}
+            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              production-ready reality.
             </span>
           </p>
 
@@ -87,17 +86,30 @@ export const Contact = () => {
         {/* LEFT */}
         <div className="space-y-6 text-gray-300">
           <h2 className="text-3xl font-semibold text-white">
-            Let’s build something{" "}
-            <span className="text-cyan-400">amazing 🤝</span>
+            Let’s build the{" "}
+            <span className="text-cyan-400">future 🤝</span>
           </h2>
 
-          <p>
-            Building scalable apps, SaaS systems, and clean user experiences.
-          </p>
+ <p className="text-gray-400 text-sm md:text-lg leading-relaxed max-w-xl">
+    Specializing in <span className="text-white">scalable architectures</span>, 
+    high-performance <span className="text-white">SaaS systems</span>, 
+    and seamless user experiences tailored for the modern web.
+  </p>
 
-          <p>📧 abd.islam456@gmail.com</p>
-          <p>📱 +49 160 4530011</p>
-          <p>📍 Germany</p>
+       <div className="flex flex-wrap gap-4 pt-4 text-sm text-gray-300">
+    <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+      <span>📧</span>
+      <a href="mailto:abd.islam456@gmail.com" className="hover:text-cyan-400 transition">abd.islam456@gmail.com</a>
+    </div>
+    <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+      <span>📱</span>
+      <a href="tel:+491604530011" className="hover:text-cyan-400 transition">+49 160 4530011</a>
+    </div>
+    <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+      <span>📍</span>
+      <span>Germany</span>
+    </div>
+  </div>
         </div>
 
         {/* 🔥 RIGHT FORM - Updated with Consistent Glow */}
