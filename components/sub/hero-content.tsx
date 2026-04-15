@@ -27,7 +27,7 @@ export const HeroContent = () => {
         >
           <SparklesIcon className="text-cyan-400 h-4 w-4 animate-pulse" />
           <h1 className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.25em] text-cyan-200/80">
-            Full Stack Developer Portfolio
+           Solving real-world problems
           </h1>
         </motion.div>
 

@@ -216,11 +216,11 @@ export const About = () => {
               {/* Updated Tags */}
               <div className="flex flex-wrap gap-2.5 mt-7">
                 {[
-                  "Full-Stack SaaS",
-                  "AI & Deep Learning",
-                  "Embedded Systems",
-                  "System Architecture",
-                  "Scalable Web Apps",
+                  "Full-Stack Development",
+                  "Modern Frontend UI",
+                  "AI-Powered Features",
+                  "Backend & APIs",
+                  "Performance Optimization",
                 ].map((item) => (
                   <span
                     key={item}
