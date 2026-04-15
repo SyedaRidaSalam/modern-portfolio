@@ -46,7 +46,7 @@ export const HeroContent = () => {
 
           {/* Elegant Typewriter Subheading with specific color hierarchy */}
           <div className="text-xl md:text-3xl font-extrabold h-[40px] flex items-center justify-center xl:justify-start gap-3">
-            <span className="text-gray-400 font-light italic">A </span>
+            <span className="text-gray-400 font-light ">A </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400">
               <Typewriter
                 words={[
@@ -70,17 +70,17 @@ export const HeroContent = () => {
           className="text-gray-400 text-sm md:text-lg leading-relaxed md:leading-loose max-w-xl font-light tracking-wide px-2 md:px-0"
         >
           Passionate{" "}
-          <span className="text-white font-medium">Software Engineer</span>{" "}
+          <span className="text-white border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">Software Engineer</span>{" "}
           specialized in building{" "}
           <span className="text-white border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
             modern web apps
           </span>
           ,{" "}
-          <span className="text-white border-b border-cyan-500/40 hover:border-cyan-500/80 transition pb-0.5">
+          <span className="text-white border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
             SaaS platforms
           </span>
           , and{" "}
-          <span className="text-white border-b border-emerald-500/40 hover:border-emerald-500/80 transition pb-0.5">
+          <span className="text-white border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
             AI-powered tools
           </span>{" "}
           with clean UI and scalable architectures.

@@ -26,19 +26,6 @@ export const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-2 mb-8">
-          {["About", "Skills", "Projects", "Experience", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500 hover:text-cyan-400 transition-colors duration-300"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
-
         {/* Social Icons */}
         <div className="flex items-center gap-5 mb-10">
           {SOCIALS.map(({ link, name, icon: Icon }) => (
@@ -53,7 +40,6 @@ export const Footer = () => {
           ))}
         </div>
 
-        {/* 🔥 REWRITTEN COPYRIGHT SECTION (Now With Passion & Emojis) */}
      {/* 🔥 REWRITTEN COPYRIGHT SECTION (Option 1) */}
 <div className="relative w-full border-t border-white/[0.05] pt-6 text-center">
   

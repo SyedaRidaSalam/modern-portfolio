@@ -37,7 +37,7 @@ const PROJECT_DATA = [
     description:
       "A simple discussion forum where users can create posts, participate in conversations, and interact using a clean PHP-based backend with MySQL database support.",
     tech: ["PHP", "HTML", "CSS", "MySQL"],
-    image: "/projects/discussion-board.jpg",
+    image: "/projects/discussions.png",
     github: "https://github.com/abdulsalamwahab-dev/discussion-php-project",
     live: "",
   },
@@ -53,41 +53,46 @@ export const Projects = () => {
     >
       {/* TITLE */}
       <div className="max-w-7xl mx-auto px-6 text-center mb-20">
-       <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true }}
-  className="px-4 text-center overflow-hidden"
->
-  {/* Small Tagline - Reduced for mobile spacing */}
-  <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
-    Creative Portfolio
-  </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="px-4 text-center overflow-hidden"
+        >
+          {/* Small Tagline - Reduced for mobile spacing */}
+          <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+            Creative Portfolio
+          </h2>
 
-  {/* Main Heading - text-3xl for mobile ensures "Projects" doesn't clip */}
-  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.1]">
-    <span className="inline text-2xl md:text-5xl">🚀</span>
-    <span>Featured</span>{" "}
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-      Projects
-    </span>
-  </h1>
+          {/* Main Heading - text-3xl for mobile ensures "Projects" doesn't clip */}
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.1]">
+            <span className="inline text-2xl md:text-5xl">🚀</span>
+            <span>Featured</span>{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              Projects
+            </span>
+          </h1>
 
-  {/* Description - Optimized for German market/recruiter readability on mobile */}
-  <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-    A showcase of my{" "}
-    <span className="text-white font-medium">technical craftsmanship</span>, 
-    featuring innovative architectures and{" "}
-    <span className="text-cyan-400 font-medium">full-stack solutions</span> built with precision and performance in mind.
-  </p>
+          {/* Description - Optimized for German market/recruiter readability on mobile */}
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+            A showcase of my{" "}
+            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              technical craftsmanship
+            </span>
+            , featuring innovative architectures and{" "}
+            <span className="text-white font-medium border-b  border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              full-stack solutions
+            </span>{" "}
+            built with precision and performance in mind.
+          </p>
 
-  {/* Premium Divider - Consistent with the rest of your sections */}
-  <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-    <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
-  </div>
-</motion.div>
+          {/* Premium Divider - Consistent with the rest of your sections */}
+          <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+            <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+          </div>
+        </motion.div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto items-start">
@@ -157,10 +162,10 @@ export const Projects = () => {
               className="relative p-[1px] rounded-3xl group"
             >
               {/* THE SAAS GLOW BORDER - Matches Experience Section */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-500/50 via-cyan-500/50 to-purple-500/50 opacity-40 blur-md group-hover:opacity-100 transition-opacity duration-700 animate-pulse" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-60 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
 
               {/* CARD INNER */}
-              <div className="relative bg-[#050510]/95 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden z-10">
+              <div className="relative bg-zinc-900  backdrop-blur-xl  rounded-2xl overflow-hidden z-10">
                 {/* IMAGE AREA */}
                 <div className="w-full h-72 overflow-hidden relative group/img">
                   <img

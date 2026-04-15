@@ -6,51 +6,55 @@ export const About = () => {
   return (
     <section
       id="about-me"
-      className="relative w-full pt-20 md:py-24 px-6 md:px-20 overflow-hidden"
+      className="relative w-full pt-20 md:py-24 xl:pt-28 xl:pb-16 px-6 md:px-20 overflow-hidden"
     >
       {/* HEADER */}
       {/* ABOUT ME HEADER - Premium & Consistent Format */}
       <div className="max-w-7xl mx-auto px-6 text-center mb-20">
-    <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true }}
-  className="px-4 text-center overflow-hidden" // Mobile safety
->
-  {/* Small Tagline - Font size and tracking reduced for mobile */}
-  <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
-    The Engineer Behind the Code
-  </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="px-4 text-center overflow-hidden" // Mobile safety
+        >
+          {/* Small Tagline - Font size and tracking reduced for mobile */}
+          <h2 className="text-[10px] md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] text-purple-400 font-semibold mb-2 md:mb-3">
+            The Engineer Behind the Code
+          </h2>
 
-  {/* Main Heading - text-3xl for mobile to prevent overflow */}
-  <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.2]">
-    <span className="inline text-2xl md:text-5xl">🙋🏻‍♂️</span>
-    <span>About</span>
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
-      Me
-    </span>
-  </h1>
+          {/* Main Heading - text-3xl for mobile to prevent overflow */}
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 flex flex-wrap items-center justify-center gap-2 md:gap-4 leading-[1.2]">
+            <span className="inline text-2xl md:text-5xl">🙋🏻‍♂️</span>
+            <span>About</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+              Me
+            </span>
+          </h1>
 
-  {/* Description - Adjusted text size (text-sm to text-base) for better mobile reading */}
-  <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
-    Passionate{" "}
-    <span className="text-white font-medium">Software Engineer</span>{" "}
-    specializing in crafting
-    <span className="text-white"> scalable SaaS products</span> and
-    AI-powered tools. I focus on building high-performance architectures
-    that transform complex problems into{" "}
-    <span className="text-cyan-400 font-medium">
-      seamless digital experiences.
-    </span>
-  </p>
+          {/* Description - Adjusted text size (text-sm to text-base) for better mobile reading */}
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed md:leading-loose px-2">
+            Bridging the gap between{" "}
+            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              robust architectures
+            </span>{" "}
+            and seamless user experiences. Specializing in{" "}
+            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              scalable web apps
+            </span>{" "}
+            and{" "}
+            <span className="text-white font-medium border-b border-purple-500/40 hover:border-purple-500/80 transition pb-0.5">
+              AI-driven tools
+            </span>{" "}
+            from Siegen, Germany.
+          </p>
 
-  {/* Premium Divider - Scaled down for mobile symmetry */}
-  <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
-    <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
-  </div>
-</motion.div>
+          {/* Premium Divider - Scaled down for mobile symmetry */}
+          <div className="relative w-16 md:w-24 h-[2px] mx-auto mt-6 md:mt-8 overflow-hidden rounded-full">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+            <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+          </div>
+        </motion.div>
       </div>
 
       {/* CONTENT GRID */}
@@ -120,79 +124,107 @@ export const About = () => {
             />
           </div>
         </motion.div>
-
         {/* RIGHT SIDE */}
         <div className="space-y-8">
           {/* CARD 1 */}
-          <motion.div className="relative p-[2px] rounded-2xl group">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-60 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="relative p-[2px] rounded-2xl group"
+          >
+            {/* Animated Gradient Border / Glow */}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-70 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
 
-            <div className="relative bg-zinc-900 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-4">
-                Who I Am
-              </h2>
+            <div className="relative bg-zinc-900/95 backdrop-blur-md rounded-2xl p-8 z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <h2 className="text-2xl font-bold">
+                  <span className="text-white">Who </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+                    I Am
+                  </span>
+                </h2>
+              </div>
 
               <p className="text-gray-300 leading-relaxed text-sm md:text-base">
                 I am a{" "}
-                <span className="text-white font-medium">
-                  Software Engineer
+                <span className="text-white font-semibold">
+                  Full Stack Software Developer{" "}
                 </span>{" "}
-                focused on building modern, scalable, and high-performance web
-                applications.
-                <br />
-                <br />I specialize in transforming ideas into{" "}
+                specializing in building high-performance, scalable web
+                applications with a strong focus on modern frontend and backend
+                engineering. I don&apos;t just write code, I engineer solutions
+                that are{" "}
                 <span className="text-white font-medium">
-                  clean, production-ready SaaS products
+                  efficient, scalable, and optimized
                 </span>{" "}
-                with strong attention to performance, UX, and maintainable
-                architecture.
+                for real-world growth.
                 <br />
-                <br />I enjoy working on challenging problems and building
-                systems that feel{" "}
-                <span className="text-white font-medium">
-                  fast, intuitive, and reliable.
-                </span>
+                <br />
+                With a background in{" "}
+                <span className="text-white font-medium">Computer Science</span>
+                , I bridge the gap between complex back-end architectures and
+                intuitive front-end experiences. My goal is to build software
+                that is not just functional, but{" "}
+                <span className="text-white font-medium">future-proof</span>.
               </p>
             </div>
           </motion.div>
 
           {/* CARD 2 */}
-          <motion.div className="relative p-[2px] rounded-2xl group">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-60 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="relative p-[2px] rounded-2xl group"
+          >
+            {/* Animated Gradient Border / Glow */}
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-70 blur-sm group-hover:opacity-100 animate-pulse transition-opacity duration-500" />
 
-            <div className="relative bg-zinc-900 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 mb-4">
-                What I Build
-              </h2>
+            <div className="relative bg-zinc-900/95 backdrop-blur-md rounded-2xl p-8 z-10">
+              <div className="flex items-center gap-3 mb-6">
+                <h2 className="text-2xl font-bold">
+                  <span className="text-white">What </span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+                    I Build
+                  </span>
+                </h2>
+              </div>
 
-              <p className="text-gray-300 text-sm leading-relaxed">
-                I build{" "}
+              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+                I specialize in architecting{" "}
+                <span className="text-white font-semibold">
+                  AI-integrated platforms
+                </span>{" "}
+                and modern SaaS products. From{" "}
                 <span className="text-white font-medium">
-                  AI-powered applications
+                  deep learning models
+                </span>{" "}
+                for automated detection to autonomous robotics systems, I build
+                at the intersection of intelligence and performance.
+                <br />
+                <br />
+                My toolkit is focused on{" "}
+                <span className="text-white font-medium">
+                  Next.js, React, and Python
                 </span>
-                , modern SaaS platforms, and high-performance web experiences
-                using Next.js and React.
-                <br />
-                <br />
-                My focus is on creating products that are not just visually
-                clean, but also{" "}
+                , ensuring that every product is production-ready,
+                lightning-fast, and built to handle
                 <span className="text-white font-medium">
-                  scalable, intelligent, and production-ready
+                  {" "}
+                  enterprise-level scale
                 </span>
                 .
               </p>
 
-              <div className="flex flex-wrap gap-2 mt-5">
+              {/* Updated Tags */}
+              <div className="flex flex-wrap gap-2.5 mt-7">
                 {[
-                  "AI Apps",
-                  "SaaS Products",
-                  "Web Apps",
-                  "Next.js",
-                  "React",
+                  "Full-Stack SaaS",
+                  "AI & Deep Learning",
+                  "Embedded Systems",
+                  "System Architecture",
+                  "Scalable Web Apps",
                 ].map((item) => (
                   <span
                     key={item}
-                    className="px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-[10px] font-bold uppercase"
+                    className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-[10px] font-bold uppercase tracking-wides"
                   >
                     {item}
                   </span>
