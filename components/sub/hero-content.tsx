@@ -51,9 +51,6 @@ export const HeroContent = () => {
                 words={[
                   "Full Stack Developer",
                   "Software Engineer",
-                  "SaaS Developer",
-                  "Smart AI Tool Builder",
-                  "UI Architect",
                 ]}
                 loop={0}
                 cursor

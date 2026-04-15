@@ -53,6 +53,11 @@ export const Contact = () => {
           Have a project in mind? Let’s create something{" "}
           <span className="text-white font-medium">legendary</span> together.
         </p>
+           {/* Premium Divider with Glow - Same as Academic Journey */}
+        <div className="relative w-24 h-[2px] mx-auto mt-8 overflow-hidden rounded-full">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-400 to-transparent animate-shimmer" />
+          <div className="w-full h-full bg-purple-500/30 blur-[1px]" />
+        </div>
       </motion.div>
 
       {/* GRID */}
@@ -65,8 +70,7 @@ export const Contact = () => {
           </h2>
 
           <p>
-            Abdul Salaam Wahab — Full Stack Developer focused on scalable apps,
-            SaaS systems, and clean UI.
+            Abdul Salaam Wahab, Full Stack Developer focused on scalable apps, SaaS systems, and clean UI
           </p>
 
           <p>📧 abd.islam456@gmail.com</p>

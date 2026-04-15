@@ -14,7 +14,7 @@ export const FloatingSocials = () => {
   const [showBadge, setShowBadge] = useState(true);
   const [text, setText] = useState("");
 
-  // ✅ FIX: Proper TypeScript ref typing
+  // ✅ Type-safe ref
   const btnRef = useRef<HTMLButtonElement | null>(null);
 
   const fullText = "Hey 👋 Want to connect with me?";
@@ -44,18 +44,7 @@ export const FloatingSocials = () => {
     audio.play();
   };
 
-  // 🧠 Auto open ONCE
-  useEffect(() => {
-    const hasOpened = sessionStorage.getItem("chat_opened");
-    if (!hasOpened) {
-      setTimeout(() => {
-        setOpen(true);
-        sessionStorage.setItem("chat_opened", "true");
-      }, 2500);
-    }
-  }, []);
-
-  // 💬 Typing effect
+  // 💬 Typing effect (only when open)
   useEffect(() => {
     if (!open) return;
 
@@ -69,7 +58,7 @@ export const FloatingSocials = () => {
     return () => clearInterval(interval);
   }, [open]);
 
-  // 🧲 Magnetic effect (FIXED TYPES)
+  // 🧲 Magnetic effect
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>) => {
     const btn = btnRef.current;
     if (!btn) return;
@@ -163,7 +152,7 @@ export const FloatingSocials = () => {
         {/* Glow */}
         <span className="absolute w-full h-full rounded-full bg-cyan-400 opacity-20 animate-ping"></span>
 
-        {/* ICON (FIXED + PREMIUM LOOK) */}
+        {/* ICON */}
         <FiMessageCircle
           size={24}
           className="relative z-10 text-white drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]"
